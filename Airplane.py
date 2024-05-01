@@ -7,12 +7,12 @@ class Airplane:
         self.airport = airport
         self.destination = None
 
-    #apogeiwsi me proorismo to airport.
+    #apogeiwsi me proorismo to airport
     def take_off(self, airport):
         self.flying = True
         self.destination = airport
 
-    #prosgeiwsi(an vrisketai se ptisi).
+    #prosgeiwsi(an vrisketai se ptisi)
     def landing(self):
         if not self.flying:
             return false
@@ -21,11 +21,11 @@ class Airplane:
             self.airport = self.destination
             return True
 
-    #airplane info.
+    #airplane info
     def info(self):
         return f"Το αεροπλάνο {self.id_num}, τύπου: {self.air_type}, εταιρία {self.company}"
 
-    #print tin katastasi tou aeroplanou(an einai se ptisi i exei prosgeiwthei).
+    #print tin katastasi tou aeroplanou(an einai se ptisi i exei prosgeiwthei)
     def __str__(self):
         if self.flying:
             return f"Κατάσταση: Σε πτήση προς το αεροδρόμιο {self.destination}"
