@@ -14,7 +14,7 @@ class Airplane:
     #prosgeiwsi(an vrisketai se ptisi)
     def landing(self):
         if not self.flying:
-            return True
+            return False
         else:
             self.flying = False
             self.airport = self.destination
