@@ -2,7 +2,6 @@ class Airplane:
     def __init__(self, id_num, company, airport):
         self.id_num = id_num
         self.company = company
-        self.air_type = air_type
         self.flying = False
         self.airport = airport
         self.destination = None
@@ -15,7 +14,7 @@ class Airplane:
     #prosgeiwsi(an vrisketai se ptisi)
     def landing(self):
         if not self.flying:
-            return false
+            return False
         else:
             self.flying = False
             self.airport = self.destination
