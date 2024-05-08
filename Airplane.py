@@ -30,3 +30,16 @@ class Airplane:
             return f"Κατάσταση: Σε πτήση προς το αεροδρόμιο {self.destination}"
         else:
             return f"Κατάσταση: Έχει προσγειωθεί στο αεροδρόμιο {self.airport}"
+# Passenger Airplane Class
+class Passenger_Plane(Airplane):
+    '''Η κλάση Passenger_Plane κληρονομεί την κλάση Airplane, αφορά την κατηγορία επιβατηγών αεροπλάνων. '''
+    def __init__(self, id_num,company,type,flying,airport,passengers):
+        self.id_num=id_num
+        self.company=company
+        self.type=type
+        self.flying=flying 
+        self.airport=airport
+        self.passengers=passengers
+
+    def __str__(self):
+        return (f'Πτήση επιβατηγού αεροπλάνου\nΤο αεροπλάνο {self.id_num}, τύπου:{self.type},εταιρία: {self.company}\nΚατάσταση:' )
