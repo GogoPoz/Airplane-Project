@@ -43,3 +43,13 @@ class Passenger_Plane(Airplane):
 
     def __str__(self):
         return (f'Πτήση επιβατηγού αεροπλάνου\nΤο αεροπλάνο {self.id_num}, τύπου:{self.type},εταιρία: {self.company}\nΚατάσταση:' )
+
+# Cargo Airplane Class (Paris)
+class Cargo_Plane(Airplane):
+  def __init__(self, ap_id, ap_company, ap_type, airport, load):
+    super().__init__(ap_id, ap_company, ap_type, airport)
+    self.load = load
+
+  def __str__(self):
+    base_str = super().__str__()
+    return f"{base_str} - Φορτίο: {self.load} τόνοι"     
